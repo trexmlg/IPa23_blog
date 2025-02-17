@@ -3,7 +3,7 @@
 $uri = parse_url($_SERVER["REQUEST_URI"])["path"];
 
 if ($uri == "/") {
-  require "controllers/index.php";
+  require "controllers/posts/index.php";
 } elseif ($uri == "/about") {
   require "controllers/story.php";
 } else {
